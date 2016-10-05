@@ -46,6 +46,24 @@ void funOverloading(float a){
     cout << a << endl;
 }
 
+// Function Recursion
+// When a function calls itself
+int factorial(int a){
+    if (a == 1){
+        return 1;
+    }
+    else{
+        cout<<a<<endl;
+        return a * factorial(a-1);
+    }
+}
+
+// address and the pointers
+// & - passing the address
+// * - pointer
+void pointerFunction(int *x){
+    *x=100;
+}
 
 // The main fucntion which has the be at the end of the code,
 // or atleast after decalring all the functions. 
@@ -56,7 +74,10 @@ int main(){
     // summDefault(1);
     // funOverloading(10.2333);
     // funOverloading(10.23);
-
+    // cout << factorial(5) <<endl;
+    // int var = 20;
+    // pointerFunction(&var);
+    // cout<<var;
 
     return 0;
 }
